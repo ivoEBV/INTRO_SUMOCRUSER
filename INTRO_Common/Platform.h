@@ -1,5 +1,5 @@
 /*
- * platform.h
+ * Platform.h
  *
  *  Created on: 26.09.2014
  *      Author: Ivo Emmenegger
@@ -21,6 +21,9 @@
 
 #define PL_HAS_LED  (1)
   /*!< Set to 1 to enable LED support, 0 otherwise */
+
+#define PL_HAS_EVENTS  (1)
+ /*!< Set to 1 to enable EVENTS support, 0 otherwise */
 
 #if PL_IS_FRDM
   #define PL_NOF_LEDS       (3)

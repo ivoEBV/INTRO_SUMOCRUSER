@@ -1,12 +1,12 @@
 /*
- * platform.c
+ * Platform.c
  *
  *  Created on: 26.09.2014
  *      Author: Ivo Emmenegger
  */
 
-#include "platform.h"
-
+#include "Platform.h"
+#include "LED.h"
 
 #if PL_HAS_LED
  // #include "LED.h"

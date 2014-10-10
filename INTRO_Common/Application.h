@@ -10,6 +10,22 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#if PL_HAS_EVENTS
+  #include "Event.h"
+#endif
+
+/*!
+ *
+ * @param event
+ */
+static void APP_EventHandler(EVNT_Handle event);
+
+/*!
+ * \brief Application loop with event handler
+ */
+static void APP_Loop(void);
+
+
 /*!
  * \brief Application main start and main routine 
  */
