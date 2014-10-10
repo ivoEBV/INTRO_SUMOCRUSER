@@ -44,6 +44,7 @@
     </IncludePaths>
     <SourceCodePaths>
       <Path>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\</Path>
+      <Path>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\</Path>
       <Path>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Project_Settings\Startup_Code\</Path>
       <Path>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Sources\</Path>
     </SourceCodePaths>
@@ -53,6 +54,7 @@
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\CS1.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\Cpu.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\LedBit1.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\LedBit2.c</PathName>
@@ -60,7 +62,10 @@
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\Vectors.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\WAIT1.c</PathName>
-      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\platform.c</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Application.c</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Event.c</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\LED.c</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Platform.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Sources\Events.c</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Sources\main.c</PathName>
@@ -69,6 +74,7 @@
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\CS1.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\Cpu.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\LedBit1.h</PathName>
@@ -79,7 +85,10 @@
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\WAIT1.h</PathName>
-      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Generated_Code\platform.h</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Application.h</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Event.h</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\LED.h</PathName>
+      <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\INTRO_Common\Platform.h</PathName>
       <PathName>C:\data\Kinetis\projects\INTRO_SUMOCRUSER\INTRO_SUMO_FRDM\Sources\Events.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\MKL25Z4.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\ADC_PDD.h</PathName>
