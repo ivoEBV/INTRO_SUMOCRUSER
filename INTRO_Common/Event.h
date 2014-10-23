@@ -18,6 +18,13 @@
 typedef enum EVNT_Handle {
   EVNT_INIT,            /*!< System Initialization Event */
   EVENT_LED_HEARTBEAT,  /*!< Led Heartbeat Event */
+  EVNT_SW1_PRESSED,     /*!< SW1 pressed Event */
+  EVNT_SW2_PRESSED,     /*!< SW2 pressed Event */
+  EVNT_SW3_PRESSED,     /*!< SW3 pressed Event */
+  EVNT_SW4_PRESSED,     /*!< SW4 pressed Event */
+  EVNT_SW5_PRESSED,     /*!< SW5 pressed Event */
+  EVNT_SW6_PRESSED,     /*!< SW6 pressed Event */
+  EVNT_SW7_PRESSED,     /*!< SW7 pressed Event */
   EVNT_NOF_EVENTS       /*!< Must be last one! */
 } EVNT_Handle;
 

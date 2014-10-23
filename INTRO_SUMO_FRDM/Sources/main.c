@@ -38,6 +38,30 @@
 #include "BitIoLdd3.h"
 #include "WAIT1.h"
 #include "CS1.h"
+#include "HF1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
+#include "SW1.h"
+#include "ExtIntLdd1.h"
+#include "PTA.h"
+#include "SW2.h"
+#include "ExtIntLdd2.h"
+#include "SW3.h"
+#include "ExtIntLdd3.h"
+#include "SW4.h"
+#include "ExtIntLdd4.h"
+#include "SW5.h"
+#include "BitIoLdd8.h"
+#include "SW6.h"
+#include "BitIoLdd9.h"
+#include "SW7.h"
+#include "ExtIntLdd5.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
+#include "UTIL1.h"
+#include "CLS1.h"
+#include "KSDK1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -52,6 +76,10 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
+
+#if PL_HAS_RESET_KEY
+  WAIT1_Waitms(500); /* wait some time until we mux the reset line */
+#endif
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
