@@ -42,17 +42,21 @@
 #include "BitIoLdd3.h"
 #include "WAIT1.h"
 #include "CS1.h"
-#include "HF1.h"
 #include "TI1.h"
 #include "TimerIntLdd1.h"
 #include "TU1.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
+#include "UTIL1.h"
+#include "CLS1.h"
+#include "KSDK1.h"
 #include "SW1.h"
 #include "ExtIntLdd1.h"
-#include "PTA.h"
 #include "SW2.h"
 #include "ExtIntLdd2.h"
 #include "SW3.h"
 #include "ExtIntLdd3.h"
+#include "PTA.h"
 #include "SW4.h"
 #include "ExtIntLdd4.h"
 #include "SW5.h"
@@ -61,11 +65,7 @@
 #include "BitIoLdd9.h"
 #include "SW7.h"
 #include "ExtIntLdd5.h"
-#include "AS1.h"
-#include "ASerialLdd1.h"
-#include "UTIL1.h"
-#include "CLS1.h"
-#include "KSDK1.h"
+#include "HF1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -172,82 +172,6 @@ void SW1_OnInterrupt(void);
 **     Returns     : Nothing
 ** ===================================================================
 */
-
-/*
-** ===================================================================
-**     Event       :  AS1_OnError (module Events)
-**
-**     Component   :  AS1 [AsynchroSerial]
-**     Description :
-**         This event is called when a channel error (not the error
-**         returned by a given method) occurs. The errors can be read
-**         using <GetError> method.
-**         The event is available only when the <Interrupt
-**         service/event> property is enabled.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void AS1_OnError(void);
-
-/*
-** ===================================================================
-**     Event       :  AS1_OnRxChar (module Events)
-**
-**     Component   :  AS1 [AsynchroSerial]
-**     Description :
-**         This event is called after a correct character is received.
-**         The event is available only when the <Interrupt
-**         service/event> property is enabled and either the <Receiver>
-**         property is enabled or the <SCI output mode> property (if
-**         supported) is set to Single-wire mode.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void AS1_OnRxChar(void);
-
-/*
-** ===================================================================
-**     Event       :  AS1_OnTxChar (module Events)
-**
-**     Component   :  AS1 [AsynchroSerial]
-**     Description :
-**         This event is called after a character is transmitted.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void AS1_OnTxChar(void);
-
-/*
-** ===================================================================
-**     Event       :  AS1_OnFullRxBuf (module Events)
-**
-**     Component   :  AS1 [AsynchroSerial]
-**     Description :
-**         This event is called when the input buffer is full;
-**         i.e. after reception of the last character 
-**         that was successfully placed into input buffer.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void AS1_OnFullRxBuf(void);
-
-/*
-** ===================================================================
-**     Event       :  AS1_OnFreeTxBuf (module Events)
-**
-**     Component   :  AS1 [AsynchroSerial]
-**     Description :
-**         This event is called after the last character in output
-**         buffer is transmitted.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void AS1_OnFreeTxBuf(void);
 
 /* END Events */
 
