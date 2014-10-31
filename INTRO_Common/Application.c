@@ -22,7 +22,9 @@
 #if PL_HAS_KEYS
   #include "Keys.h"
 #endif
-
+#if PL_HAS_SHELL
+  #include "CLS1.h"
+#endif
 static uint8_t lastKeyPressed;
 
 static void APP_EventHandler(EVNT_Handle event) {
@@ -43,6 +45,9 @@ static void APP_EventHandler(EVNT_Handle event) {
       break;
     case EVNT_SW1_PRESSED:
       lastKeyPressed = 1;
+		#if PL_HAS_SHELL
+      	  CLS1_SendStr("SW1 PRESSED", CLS1_GetStdio()->stdOut);
+		#endif
       break;
     case EVNT_SW2_PRESSED:
       lastKeyPressed = 2;
@@ -85,7 +90,10 @@ void APP_Start(void) {
   PL_Init(); /* platform initialization */
   //TEST_Test();
   EVNT_SetEvent(EVNT_INIT); /* set initial event */
-  APP_Loop();
+#if PL_HAS_RTOS
+  RTOS_Run();
+#endif
+    APP_Loop();
 #if 0
   for(;;) {
 #if PL_HAS_MEALY

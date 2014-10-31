@@ -31,6 +31,9 @@
   #include "Debounce.h"
   #include "KeyDebounce.h"
 #endif
+#if PL_HAS_RTOS
+  #include "RTOS.h"
+#endif
 
 void PL_Init(void) {
 #if PL_HAS_LED
@@ -58,9 +61,15 @@ void PL_Init(void) {
   DBNC_Init();
   KEYDBNC_Init();
 #endif
+#if PL_HAS_RTOS
+  RTOS_Init();
+#endif
 }
 
 void PL_Deinit(void) {
+#if PL_HAS_RTOS
+  RTOS_Deinit();
+#endif
 #if PL_HAS_BUZZER
   BUZ_Deinit();
 #endif

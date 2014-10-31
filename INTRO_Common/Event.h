@@ -18,13 +18,41 @@
 typedef enum EVNT_Handle {
   EVNT_INIT,            /*!< System Initialization Event */
   EVENT_LED_HEARTBEAT,  /*!< Led Heartbeat Event */
+#if PL_NOF_KEYS >= 1
   EVNT_SW1_PRESSED,     /*!< SW1 pressed Event */
+  EVNT_SW1_LPRESSED,     /*!< SW1 long pressed Event */
+  EVNT_SW1_RELEASED,     /*!< SW1 released Event */
+#endif
+#if PL_NOF_KEYS >= 2
   EVNT_SW2_PRESSED,     /*!< SW2 pressed Event */
+  EVNT_SW2_LPRESSED,     /*!< SW2 long pressed Event */
+  EVNT_SW2_RELEASED,     /*!< SW2 released Event */
+#endif
+#if PL_NOF_KEYS >= 3
   EVNT_SW3_PRESSED,     /*!< SW3 pressed Event */
+  EVNT_SW3_LPRESSED,     /*!< SW3 long pressed Event */
+  EVNT_SW3_RELEASED,     /*!< SW3 released Event */
+#endif
+#if PL_NOF_KEYS >= 4
   EVNT_SW4_PRESSED,     /*!< SW4 pressed Event */
+  EVNT_SW4_LPRESSED,     /*!< SW4 long pressed Event */
+  EVNT_SW4_RELEASED,     /*!< SW4 released Event */
+#endif
+#if PL_NOF_KEYS >= 5
   EVNT_SW5_PRESSED,     /*!< SW5 pressed Event */
+  EVNT_SW5_LPRESSED,     /*!< SW5 long pressed Event */
+  EVNT_SW5_RELEASED,     /*!< SW5 released Event */
+#endif
+#if PL_NOF_KEYS >= 6
   EVNT_SW6_PRESSED,     /*!< SW6 pressed Event */
+  EVNT_SW6_LPRESSED,     /*!< SW6 long pressed Event */
+  EVNT_SW6_RELEASED,     /*!< SW6 released Event */
+#endif
+#if PL_NOF_KEYS >= 7
   EVNT_SW7_PRESSED,     /*!< SW7 pressed Event */
+  EVNT_SW7_LPRESSED,     /*!< SW7 long pressed Event */
+  EVNT_SW7_RELEASED,     /*!< SW7 released Event */
+#endif
   EVNT_NOF_EVENTS       /*!< Must be last one! */
 } EVNT_Handle;
 

@@ -66,6 +66,7 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd3.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd4.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd5.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FRTOS1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\HF1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\KSDK1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit1.c</PathName>
@@ -73,6 +74,8 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit3.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PTA.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSCNTRLDD1.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSTRC1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW2.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW3.c</PathName>
@@ -86,6 +89,22 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\UTIL1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\Vectors.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\WAIT1.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\croutine.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\event_groups.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\heap_1.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\heap_2.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\heap_3.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\heap_4.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\list.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\port.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\queue.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\tasks.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\timers.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcBase.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcHardwarePort.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernel.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelPort.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcUser.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Application.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Buzzer.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Debounce.c</PathName>
@@ -95,6 +114,9 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\LED.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Mealy.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Platform.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\RTOS.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Shell.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\ShellQueue.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Timer.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Trigger.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Project_Settings\Startup_Code\startup.c</PathName>
@@ -117,6 +139,9 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd3.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd4.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd5.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FRTOS1.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FreeRTOS.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FreeRTOSConfig.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\HF1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\KSDK1.h</PathName>
@@ -128,6 +153,8 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PTA.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSCNTRLDD1.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSTRC1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW2.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW3.h</PathName>
@@ -135,11 +162,32 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW5.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW6.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW7.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\StackMacros.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\TI1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\TU1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\TimerIntLdd1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\UTIL1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\WAIT1.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\croutine.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\event_groups.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\list.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\mpu_wrappers.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\portTicks.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\portable.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\portmacro.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\projdefs.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\queue.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\semphr.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\task.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\timers.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcBase.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcConfig.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcHardwarePort.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernel.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelHooks.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelPort.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcTypes.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcUser.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Application.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Buzzer.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Debounce.h</PathName>
@@ -149,6 +197,9 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\LED.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Mealy.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Platform.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\RTOS.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Shell.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\ShellQueue.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Timer.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\INTRO_Common\Trigger.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Sources\Events.h</PathName>
@@ -176,6 +227,9 @@
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\UART_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\USB_PDD.h</PathName>
     </GeneratedHs>
+    <GeneratedASMs>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\portasm.s</PathName>
+    </GeneratedASMs>
   </FILES>
   <OPTIONS>
   </OPTIONS>
