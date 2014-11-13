@@ -18,12 +18,22 @@
 #if PL_HAS_BLUETOOTH
   #include "BT1.h"
 #endif
+#if PL_HAS_SHELL_QUEUE
+  #include "ShellQueue.h"
+#endif
+#if PL_HAS_REFLECTANCE
+  #include "Reflectance.h"
+#endif
 
 static uint32_t SHELL_val; /* used as demo value for shell */
 
 void SHELL_SendString(unsigned char *msg) {
-  /*! \todo Replace this with message queues */
+#if PL_HAS_SHELL_QUEUE
+  /*! \todo Implement function using queues */
+  SQUEUE_SendString(msg);
+#else
   CLS1_SendStr(msg, CLS1_GetStdio()->stdOut);
+#endif
 }
 
 /*!
@@ -84,6 +94,11 @@ static const CLS1_ParseCommandCallback CmdParserTable[] =
 #if BT1_PARSE_COMMAND_ENABLED
   BT1_ParseCommand,
 #endif
+#endif
+#if PL_HAS_REFLECTANCE
+  #if REF_PARSE_COMMAND_ENABLED
+  REF_ParseCommand,
+  #endif
 #endif
   NULL /* Sentinel */
 };
@@ -155,12 +170,25 @@ static portTASK_FUNCTION(ShellTask, pvParameters) {
 #if PL_HAS_BLUETOOTH
     (void)CLS1_ReadAndParseWithCommandTable(bluetooth_buf, sizeof(bluetooth_buf), &BT_stdio, CmdParserTable);
 #endif
+#if PL_HAS_SHELL_QUEUE
+    {
+      /*! \todo Handle shell queue */
+      unsigned char ch;
+
+      while((ch=SQUEUE_ReceiveChar()) && ch!='\0') {
+        ioLocal->stdOut(ch);
+#if PL_HAS_BLUETOOTH
+        BT_stdio.stdOut(ch); /* copy on Bluetooth */
+#endif
+      }
+    }
+#endif
     FRTOS1_vTaskDelay(50/portTICK_RATE_MS);
   } /* for */
 }
 
 void SHELL_Init(void) {
-  CLS1_Init();
+  //CLS1_Init(); /* this is done in PE_Low_Level_init()! */
 #if !CLS1_DEFAULT_SERIAL && PL_HAS_BLUETOOTH
   (void)CLS1_SetStdio(&BT_stdio); /* use the Bluetooth stdio as default */
 #endif

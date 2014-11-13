@@ -14,14 +14,12 @@
 static portTASK_FUNCTION(Task1, pvParameters) {
   for(;;) {
     LED3_Neg();
-    FRTOS1_vTaskDelay(1000/portTICK_RATE_MS)
   }
 }
 
 static portTASK_FUNCTION(Task2, pvParameters) {
   for(;;) {
     LED2_Neg();
-    FRTOS1_vTaskDelay(1500/portTICK_RATE_MS)
   }
 }
 #endif
@@ -37,10 +35,9 @@ void RTOS_Init(void) {
   if (FRTOS1_xTaskCreate(Task1, (signed portCHAR *)"Task1", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
     for(;;){} /* error */
   }
-
-/*  if (FRTOS1_xTaskCreate(Task2, (signed portCHAR *)"Task2", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
-    for(;;){}  error
-  }*/
+  if (FRTOS1_xTaskCreate(Task2, (signed portCHAR *)"Task2", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
+    for(;;){} /* error */
+  }
 #endif
 }
 

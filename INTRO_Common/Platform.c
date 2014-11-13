@@ -1,8 +1,10 @@
-/*
- * Platform.c
+/**
+ * \file
+ * \brief Platform implementation module.
+ * \author Erich Styger, erich.styger@hslu.ch
  *
- *  Created on: 26.09.2014
- *      Author: Ivo Emmenegger
+ * This implements the platform module. 
+ * Here the platform gets initialized, and all platform dependent macros get defined.
  */
 
 #include "Platform.h"
@@ -34,11 +36,23 @@
 #if PL_HAS_RTOS
   #include "RTOS.h"
 #endif
+#if PL_HAS_SHELL
+  #include "Shell.h"
+#endif
+#if PL_HAS_SHELL_QUEUE
+  #include "ShellQueue.h"
+#endif
+#if PL_HAS_SEMAPHORE
+  #include "Sem.h"
+#endif
+#if PL_HAS_REFLECTANCE
+  #include "Reflectance.h"
+#endif
 
 void PL_Init(void) {
 #if PL_HAS_LED
   LED_Init();
-#endif
+#endif  
 #if PL_HAS_TIMER
   TMR_Init();
 #endif
@@ -64,9 +78,33 @@ void PL_Init(void) {
 #if PL_HAS_RTOS
   RTOS_Init();
 #endif
+#if PL_HAS_SHELL
+  SHELL_Init();
+#endif
+#if PL_HAS_SHELL_QUEUE
+  SQUEUE_Init();
+#endif
+#if PL_HAS_SEMAPHORE
+  SEM_Init();
+#endif
+#if PL_HAS_REFLECTANCE
+  REF_Init();
+#endif
 }
 
 void PL_Deinit(void) {
+#if PL_HAS_REFLECTANCE
+  REF_Deinit();
+#endif
+#if PL_HAS_SEMAPHORE
+  SEM_Deinit();
+#endif
+#if PL_HAS_SHELL_QUEUE
+  SQUEUE_Deinit();
+#endif
+#if PL_HAS_SHELL
+  SHELL_Deinit();
+#endif
 #if PL_HAS_RTOS
   RTOS_Deinit();
 #endif
