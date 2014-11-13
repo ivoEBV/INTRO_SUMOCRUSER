@@ -69,6 +69,8 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\ExtIntLdd5.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FRTOS1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\HF1.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IFsh1.c</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IntFlashLdd1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\KSDK1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit2.c</PathName>
@@ -76,7 +78,6 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PTA.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSCNTRLDD1.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSTRC1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\Rx1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW1.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW2.c</PathName>
@@ -105,11 +106,6 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\queue.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\tasks.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\timers.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcBase.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcHardwarePort.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernel.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelPort.c</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcUser.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\usb_cdc.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\usb_cdc_pstn.c</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\usb_class.c</PathName>
@@ -161,7 +157,9 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FreeRTOS.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\FreeRTOSConfig.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\HF1.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IFsh1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IO_Map.h</PathName>
+      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\IntFlashLdd1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\KSDK1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\LedBit2.h</PathName>
@@ -172,7 +170,6 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\PTA.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSCNTRLDD1.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\RTOSTRC1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\Rx1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW1.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\SW2.h</PathName>
@@ -205,14 +202,6 @@
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\semphr.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\task.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\timers.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcBase.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcConfig.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcHardwarePort.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernel.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelHooks.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcKernelPort.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcTypes.h</PathName>
-      <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\trcUser.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\types.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\usb_bdt_kinetis.h</PathName>
       <PathName>C:\HS2014\INTRO\git\MyTeam\INTRO_SUMO_FRDM\Generated_Code\usb_cdc.h</PathName>
