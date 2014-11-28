@@ -29,7 +29,7 @@ static EVNT_MemUnit EVNT_Events[((EVNT_NOF_EVENTS-1)/EVNT_MEM_UNIT_NOF_BITS)+1];
 
 void EVNT_SetEvent(EVNT_Handle event) {
   CS1_CriticalVariable()
-
+  
   CS1_EnterCritical();
   SET_EVENT(event);
   CS1_ExitCritical();

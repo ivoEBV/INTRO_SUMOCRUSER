@@ -53,7 +53,7 @@ void LED_Init(void) {
  */
 void LED_Test(void) {
   bool isOn = TRUE;
-
+  
   LED1_On();
   LED2_On();
   LED3_On();
@@ -79,3 +79,4 @@ void LED_Test(void) {
     for(;;){}; /* error */
   }
 }
+

@@ -32,13 +32,165 @@
   #include "RTOS.h"
   #include "FRTOS1.h"
 #endif
+#if PL_HAS_RTOS_TRACE
+  #include "RTOSTRC1.h"
+#endif
+#if PL_HAS_ACCEL
+  #include "Accel.h"
+#endif
 #include "Test.h"
 
-static uint8_t lastKeyPressed;
+void APP_DebugPrint(unsigned char *str) {
+#if PL_HAS_SHELL
+  CLS1_SendStr(str, CLS1_GetStdio()->stdOut);
+#endif
+}
 
+#if 1
+void HandleEvents(void) {
+  if (EVNT_EventIsSetAutoClear(EVNT_INIT)) {
+#if PL_HAS_BUZZER
+      BUZ_Beep(300, 1000);
+#endif
+      LED1_On();
+      WAIT1_Waitms(50);
+      LED1_Off();
+      LED2_On();
+      WAIT1_Waitms(50);
+      LED2_Off();
+      LED3_On();
+      WAIT1_Waitms(50);
+      LED3_Off();
+  } else if (EVNT_EventIsSetAutoClear(EVENT_LED_HEARTBEAT)) {
+    LED1_Neg();
+#if PL_NOF_KEYS >= 1
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW1_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW1 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW1_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW1 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW1_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW1 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 2
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW2_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW2 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW2_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW2 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW2_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW2 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 3
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW3_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW3 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW3_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW3 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW3_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW3 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 4
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW4_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW4 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW4_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW4 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW4_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW4 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 5
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW5_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW5 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW5_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW5 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW5_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW5 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 6
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW6_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW6 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW6_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW6 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW6_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW6 released!\r\n");
+  #endif
+#endif
+#if PL_NOF_KEYS >= 7
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW7_PRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW7 pressed!\r\n");
+  #endif
+  #if PL_HAS_BUZZER
+      BUZ_Beep(300, 500);
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW7_LPRESSED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW7 long pressed!\r\n");
+  #endif
+  } else if (EVNT_EventIsSetAutoClear(EVNT_SW7_RELEASED)) {
+  #if PL_HAS_SHELL
+      SHELL_SendString("SW7 released!\r\n");
+  #endif
+#endif
+  }
+}
+#else
 static void APP_EventHandler(EVNT_Handle event) {
   switch(event) {
     case EVNT_INIT:
+#if PL_HAS_BUZZER
+      BUZ_Beep(300, 1000);
+#endif
       LED1_On();
       WAIT1_Waitms(50);
       LED1_Off();
@@ -125,6 +277,7 @@ static void APP_EventHandler(EVNT_Handle event) {
       break;
   }
 }
+#endif
 
 #if PL_HAS_RTOS
 static void AppTask(void *pvParameters) {
@@ -132,9 +285,16 @@ static void AppTask(void *pvParameters) {
 #if PL_HAS_SHELL
   //CLS1_SendStr("Hello World!\r\n", CLS1_GetStdio()->stdOut);
 #endif
+#if PL_HAS_ACCEL /* need to initialize accelerometer from a task (interrupts enabled). */
+  ACCEL_LowLevelInit();
+#endif
   for(;;) {
 #if PL_HAS_EVENTS
+#if 1
+    HandleEvents();
+#else
     EVNT_HandleEvent(APP_EventHandler); /* handle pending events */
+#endif
 #endif
 #if PL_HAS_KEYS && PL_NOF_KEYS>0
     KEY_Scan(); /* scan keys */
@@ -142,7 +302,7 @@ static void AppTask(void *pvParameters) {
 #if PL_HAS_MEALY
     MEALY_Step();
 #endif
-    FRTOS1_vTaskDelay(100/portTICK_RATE_MS);
+    FRTOS1_vTaskDelay(50/portTICK_RATE_MS);
   }
 }
 #else
@@ -168,6 +328,11 @@ static void APP_Loop(void) {
 #endif
 
 void APP_Start(void) {
+#if PL_HAS_RTOS_TRACE
+  if (RTOSTRC1_uiTraceStart()==0) {
+    for(;;){} /* error starting trace recorder. Not setup for enough queues/tasks/etc? */
+  }
+#endif
   PL_Init(); /* platform initialization */
   //TEST_Test();
   EVNT_SetEvent(EVNT_INIT); /* set initial event */
