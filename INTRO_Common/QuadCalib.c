@@ -112,7 +112,7 @@ static uint8_t Measure(uint8_t channel, QuadTime_t *timing) {
 }
 
 static uint8_t Tune(const CLS1_StdIOType *io, uint8_t channel, MOT_MotorDevice *motorHandle) {
-  #define TUNE_MOTOR_PERCENT 20
+  #define TUNE_MOTOR_PERCENT 5
   uint16_t dac;
   int i;
   QuadTime_t timing;

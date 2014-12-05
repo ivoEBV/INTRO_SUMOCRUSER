@@ -30,7 +30,6 @@ void RTOS_Run(void) {
 }
 
 void RTOS_Init(void) {
-  /*! \todo Add tasks here */
 #if 0
   if (FRTOS1_xTaskCreate(T1, (signed portCHAR *)"T1", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
     for(;;){} /* error */

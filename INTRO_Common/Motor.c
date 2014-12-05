@@ -189,7 +189,6 @@ uint8_t MOT_ParseCommand(const unsigned char *cmd, bool *handled, const CLS1_Std
 #endif /* PL_HAS_SHELL */
 
 void MOT_Deinit(void) {
-  /*! \todo What could you do here? */
 #if 1
   MOT_SetSpeedPercent(&motorL, 0);
   MOT_SetSpeedPercent(&motorR, 0);

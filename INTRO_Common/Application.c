@@ -39,6 +39,7 @@
   #include "Accel.h"
 #endif
 #include "Test.h"
+#include "Motor.h"
 
 void APP_DebugPrint(unsigned char *str) {
 #if PL_HAS_SHELL
@@ -283,7 +284,7 @@ static void APP_EventHandler(EVNT_Handle event) {
 static void AppTask(void *pvParameters) {
   (void)pvParameters; /* not used */
 #if PL_HAS_SHELL
-  //CLS1_SendStr("Hello World!\r\n", CLS1_GetStdio()->stdOut);
+  CLS1_SendStr("Hello World!\r\n", CLS1_GetStdio()->stdOut);
 #endif
 #if PL_HAS_ACCEL /* need to initialize accelerometer from a task (interrupts enabled). */
   ACCEL_LowLevelInit();
@@ -337,7 +338,7 @@ void APP_Start(void) {
   //TEST_Test();
   EVNT_SetEvent(EVNT_INIT); /* set initial event */
 #if PL_HAS_RTOS
-  if (FRTOS1_xTaskCreate(AppTask, (signed portCHAR *)"App", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL) != pdPASS) {
+  if (FRTOS1_xTaskCreate(AppTask, (signed portCHAR *)"App", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error */
   }
   RTOS_Run();

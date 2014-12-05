@@ -72,15 +72,15 @@
   /*!< Set to 1 if using quadrature calibration, 0 otherwise */
 #define PL_HAS_QUADRATURE     (1 && PL_IS_ROBO)
   /*!< Set to 1 if using quadrature counters, 0 otherwise */
-#define PL_HAS_MOTOR_TACHO    (1 && PL_HAS_QUADRATURE)
+#define PL_HAS_MOTOR_TACHO    (0 && PL_HAS_QUADRATURE)
   /*!< Set to 1 if using speed estimation, 0 otherwise */
-#define PL_HAS_PID            (1 && PL_HAS_MOTOR_TACHO)
+#define PL_HAS_PID            (0 && PL_HAS_MOTOR_TACHO)
   /*!< Set to 1 if using PID, 0 otherwise */
 #define PL_HAS_DRIVE          (1 && PL_HAS_PID)
   /*!< Set to 1 if using PID, 0 otherwise */
 #define PL_HAS_ULTRASONIC     (1 && PL_IS_ROBO)
   /*!< Set to 1 if using ultrasonic sensor, 0 otherwise */
-#define PL_HAS_ACCEL          (1)
+#define PL_HAS_ACCEL          (0)
   /*!< Set to 1 if using an accelerometer, 0 otherwise */
 #define PL_HAS_ACCEL_STOP     (1 && PL_HAS_ACCEL && PL_HAS_MOTOR && PL_IS_ROBO)
   /*!< Set to 1 if stopping robot with accelerometer, 0 otherwise */

@@ -154,7 +154,8 @@ void QuadInt_OnInterrupt(void)
 **     Description :
 **         User event which will be called before accessing the I2C bus.
 **         Useful for starting a critical section.
-**     Parameters  : None
+**     Parameters
+**     : None
 **     Returns     : Nothing
 ** ===================================================================
 */
