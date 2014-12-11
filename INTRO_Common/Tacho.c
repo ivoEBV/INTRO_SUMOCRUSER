@@ -113,7 +113,7 @@ void TACHO_Sample(void) {
     TACHO_PosHistory_Index = 0;
   }
   /* \todo Temporary only! You will need to do this later before doing PID calculation */
-  TACHO_CalcSpeed();
+  //TACHO_CalcSpeed();
 #else
   /*! \todo Implement function */ 
 #endif
@@ -140,15 +140,15 @@ static void TACHO_PrintStatus(const CLS1_StdIOType *io) {
  * \param io I/O channel to be used
  */
 static void TACHO_PrintHelp(const CLS1_StdIOType *io) {
-  CLS1_SendHelpStr((unsigned char*)"tacho", (unsigned char*)"Group of tacho commands\r\n", io->stdOut);
-  CLS1_SendHelpStr((unsigned char*)"  help|status", (unsigned char*)"Shows tacho help or status\r\n", io->stdOut);
+  CLS1_SendHelpStr((unsigned char*)"Tacho", (unsigned char*)"Group of Tacho commands\r\n", io->stdOut);
+  CLS1_SendHelpStr((unsigned char*)"  help|status", (unsigned char*)"Shows Tacho help or status\r\n", io->stdOut);
 }
 
 uint8_t TACHO_ParseCommand(const unsigned char *cmd, bool *handled, const CLS1_StdIOType *io) {
-  if (UTIL1_strcmp((char*)cmd, (char*)CLS1_CMD_HELP)==0 || UTIL1_strcmp((char*)cmd, (char*)"tacho help")==0) {
+  if (UTIL1_strcmp((char*)cmd, (char*)CLS1_CMD_HELP)==0 || UTIL1_strcmp((char*)cmd, (char*)"Tacho help")==0) {
     TACHO_PrintHelp(io);
     *handled = TRUE;
-  } else if (UTIL1_strcmp((char*)cmd, (char*)CLS1_CMD_STATUS)==0 || UTIL1_strcmp((char*)cmd, (char*)"tacho status")==0) {
+  } else if (UTIL1_strcmp((char*)cmd, (char*)CLS1_CMD_STATUS)==0 || UTIL1_strcmp((char*)cmd, (char*)"Tacho status")==0) {
     TACHO_PrintStatus(io);
     *handled = TRUE;
   }

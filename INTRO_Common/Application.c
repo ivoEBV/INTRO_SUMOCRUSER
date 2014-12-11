@@ -40,6 +40,7 @@
 #endif
 #include "Test.h"
 #include "Motor.h"
+#include "StateMachine.h"
 
 void APP_DebugPrint(unsigned char *str) {
 #if PL_HAS_SHELL
@@ -66,6 +67,8 @@ void HandleEvents(void) {
     LED1_Neg();
 #if PL_NOF_KEYS >= 1
   } else if (EVNT_EventIsSetAutoClear(EVNT_SW1_PRESSED)) {
+	  Calibration_Run();
+
   #if PL_HAS_SHELL
       SHELL_SendString("SW1 pressed!\r\n");
   #endif
@@ -73,6 +76,7 @@ void HandleEvents(void) {
       BUZ_Beep(300, 500);
   #endif
   } else if (EVNT_EventIsSetAutoClear(EVNT_SW1_LPRESSED)) {
+	  StateMachine_Init();
   #if PL_HAS_SHELL
       SHELL_SendString("SW1 long pressed!\r\n");
   #endif

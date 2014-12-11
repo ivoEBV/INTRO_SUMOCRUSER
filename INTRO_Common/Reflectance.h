@@ -29,6 +29,11 @@
   #define REF_PARSE_COMMAND_ENABLED 0
 #endif
 
+  /*!
+   * \brief getter method to get the reflectance values
+   */
+int Get_Reflectance_Values(int i);
+
 /*!
  * \brief Driver Deinitialization.
  */
